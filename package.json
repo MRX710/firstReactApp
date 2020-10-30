@@ -33,7 +33,7 @@
   },
   "description": "RemakeVk",
   "main": "index.js",
-  "repository": "https://github.com/MRX710/RemakeVK.git",
+  "repository": "https://github.com/MRX710/RemakeVkInReact.git",
   "author": "MiRX <59041051+MRX710@users.noreply.github.com>",
   "license": "MIT"
 }
