@@ -1,7 +1,8 @@
 import React from 'react';
+import obj from './MainNav.module.css';
 
-const Nav = () => {
-    return <nav className="nav">
+const MainNav = () => {
+    return <nav className={obj.nav}>
         <div><a href="#">Profile</a></div>
         <div><a href="#">Messages</a></div>
         <div><a href="#">News</a></div>
@@ -10,4 +11,4 @@ const Nav = () => {
     </nav>
 };
 
-export default Nav;
+export default MainNav;

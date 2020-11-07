@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.header{
+    height:42px;
+    width:1600px;
+    background:#4A76A8;
+}
+.headerContent{
+    height:42px;
+    width:968px;
+    margin:0 auto;
+}
+.logoVk{
+    height:19px;
+    width:33px;
+}
+.logoVk{
+    color:#FFFFFF;
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+    margin:11px 0 12px 9px;
+}
