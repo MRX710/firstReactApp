@@ -16,7 +16,7 @@ const App = () => {
                 <Profile/>
                 <AdditNav/>
             </div>
-
+            <Footer/>
         </div>
     );
 }
