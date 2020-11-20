@@ -1,0 +1,21 @@
+
+.item{
+    width:153px;
+    height:28px;
+    display: flex;
+    align-items: center;
+}
+.item a{
+    /*color:#2A5885;*/
+    color:#2A5885;
+
+}
+.item img{
+    color:#B5B8BB;
+    width:24px;
+    height:24px;
+    padding-right: 11px;
+}
+
+
+
