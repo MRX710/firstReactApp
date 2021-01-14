@@ -5,7 +5,7 @@ const MainItem = (props) => {
     return (
     <div className={obj.item}>
         <img src={props.sprite} alt=""/>
-        <a href="#">{props.content}</a>
+        <a href={props.link}>{props.content}</a>
     </div>
     )
 };

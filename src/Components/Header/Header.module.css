@@ -2,11 +2,14 @@
 
 
 .header{
-    height:42px;
-    width:1600px;
+    /*overflow: hidden;*/
+    max-height:42px;
+    max-width:1600px;
     background:#4A76A8;
 }
 .headerContent{
+    /*overflow: hidden;*/
+    display:flex;
     height:42px;
     width:968px;
     margin:0 auto;
@@ -14,10 +17,93 @@
 .logoVk{
     height:19px;
     width:33px;
-}
-.logoVk{
     color:#FFFFFF;
     font-family: 'Lobster', cursive;
     font-size:30px;
     margin:11px 0 12px 9px;
+}
+.search{
+    display: flex;
+    background: #224B7A;
+    color: #8FADC8;
+    height: 28px;
+    width: 230px;
+    margin:8px 26px 6px 132px;
+    border-radius: 14px;
+}
+.search p{
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin:6px 0;
+}
+.search img{
+    margin:7px 6px 7px 8px;
+}
+.ding{
+    margin:12px 25px 12px 30px;
+}
+.listback{
+    margin:9px 1px 9px 0;
+}
+.play{
+    margin:13px 1px 13px 0;
+}
+.listforward{
+    margin: 9px 7px 9px 0;
+}
+.titleSong
+{
+    margin:8px 102px 6px 0;
+    background:#8FADC8;
+    height: 28px;
+    width: 207px;
+}
+.userinfo{
+    display:flex;
+    height: 42px;
+    /*width: 103px;*/
+    max-width: 154px;
+    width: auto;
+    box-sizing: border-box;
+    padding: 7px 9px 7px 9px;
+    /*background: aqua;*/
+}
+.username{
+    box-sizing: border-box;
+    padding-right:2px;
+    overflow: hidden;
+    display: flex;
+    height: 28px;
+    /*width: 27px;*/
+    max-width: 78px;
+    width:auto;
+    margin-right:12px;
+    /*background:black;*/
+    color:white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.5px;
+    line-height: 28px;
+    flex-shrink: 1;
+    /*flex: none;*/
+    order: 0;
+    /*flex-grow: 0;*/
+}
+.userbody{
+    display:flex;
+}
+.image_profile{
+    width: 28px;
+    height: 28px;
+}
+.profile_info{
+    width: 8px;
+    height: 4px;
+    margin:13.7px 0 11.7px 10.8px;
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import obj from './MainNav.module.css';
 import MainItem from "./MainItems";
-import home from "../Sprities/grey/home_24(solid).png";
-import news from "../Sprities/grey/news_24(solid).png";
-import friends from "../Sprities/grey/friends_24(solid).png";
-import groups from "../Sprities/grey/groups_24(solid).png"
-import music from "../Sprities/grey/music_24(solid).png";
-import settings from "../Sprities/grey/settings_16.png";
-import mes from "../Sprities/grey/messages_24(solid).png";
+import home from "../../Sprites/home_24(solid).png";
+import news from "../../Sprites/news_24(solid).png";
+import friends from "../../Sprites/friends_24(solid).png";
+import groups from "../../Sprites/groups_24(solid).png"
+import music from "../../Sprites/music_24(solid).png";
+import settings from "../../Sprites/settings_16.png";
+import mes from "../../Sprites/messages_24(solid).png";
 
 const MainNav = () => {
     return (
@@ -19,9 +19,9 @@ const MainNav = () => {
         <div><img src={groups} alt=""/><a href="#">Groups</a></div>
         <div><img src={music} alt=""/><a href="#">Music</a></div>
         <div><img src={settings} alt=""/><a href="#">Settings</a></div>*/}
-        <MainItem sprite = {home} content = "Profile"/>
+        <MainItem link = "/profile" sprite = {home} content = "Profile"/>
         <MainItem sprite = {news} content = "News"/>
-        <MainItem sprite = {mes} content = "Messages"/>
+        <MainItem link = "/messages" sprite = {mes} content = "Messages"/>
         <MainItem sprite = {friends} content = "Friends"/>
         <MainItem sprite = {groups} content = "Groups"/>
         <MainItem sprite = {music} content = "Music"/>
