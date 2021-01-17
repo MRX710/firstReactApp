@@ -3,17 +3,45 @@
 
 .header{
     /*overflow: hidden;*/
-    max-height:42px;
-    max-width:1600px;
+    height:42px;
+    width:100%;
     background:#4A76A8;
+
 }
 .headerContent{
     /*overflow: hidden;*/
+    margin:0 auto;
     display:flex;
     height:42px;
     width:968px;
-    margin:0 auto;
 }
+@media screen and (min-width: 801px ){
+    .header {
+        width: 1600px;
+        margin: 0 auto;
+    }
+
+}
+/*@media screen and (max-width: 800px ){*/
+/*    .headerContent {*/
+/*        !*width: 540px;*!*/
+/*        width: calc(100vw - 40px);*/
+/*    }*/
+/*}*/
+/*@media screen and (max-width: 560px ){*/
+/*    .header{*/
+/*        padding: 0 calc((100vw - 530px) / 2);*/
+/*    }*/
+/*    .headerContent{*/
+/*        width: 530px;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 953px ){*/
+/*    .headerContent {*/
+/*        width: 968px;*/
+/*        padding: 0 calc((100vw - 968px) / 2);*/
+/*    }*/
+/*}*/
 .logoVk{
     height:19px;
     width:33px;

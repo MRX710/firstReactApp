@@ -13,19 +13,19 @@ const MainNav = () => {
     return (
     <nav className={obj.nav}>
         {/*<div><img src={home} alt="" className={obj.home}/><a href="#">Profile</a></div>
-        <div><img src={news} alt=""/><a href="#">News</a></div>
-        <div><img src={mes} alt=""/><a href="#">Messages</a></div>
+        <div><img src={news} alt=""/><a href="#">Settings</a></div>
+        <div><img src={mes} alt=""/><a href="#">Groups</a></div>
         <div><img src={friends} alt=""/><a href="#">Friends</a></div>
         <div><img src={groups} alt=""/><a href="#">Groups</a></div>
         <div><img src={music} alt=""/><a href="#">Music</a></div>
         <div><img src={settings} alt=""/><a href="#">Settings</a></div>*/}
         <MainItem link = "/profile" sprite = {home} content = "Profile"/>
-        <MainItem sprite = {news} content = "News"/>
-        <MainItem link = "/messages" sprite = {mes} content = "Messages"/>
-        <MainItem sprite = {friends} content = "Friends"/>
-        <MainItem sprite = {groups} content = "Groups"/>
-        <MainItem sprite = {music} content = "Music"/>
-        <MainItem sprite = {settings} content = "Settings"/>
+        <MainItem link = "/news" sprite = {news} content = "Settings"/>
+        <MainItem link = "/messages" sprite = {mes} content = "Groups"/>
+        <MainItem link = "/friends" sprite = {friends} content = "Friends"/>
+        <MainItem link = "/groups" sprite = {groups} content = "Groups"/>
+        <MainItem link = "/music" sprite = {music} content = "Music"/>
+        <MainItem link = "/settings" sprite = {settings} content = "Settings"/>
     </nav>);
 };
 
