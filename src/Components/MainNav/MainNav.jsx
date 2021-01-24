@@ -20,8 +20,8 @@ const MainNav = () => {
         <div><img src={music} alt=""/><a href="#">Music</a></div>
         <div><img src={settings} alt=""/><a href="#">Settings</a></div>*/}
         <MainItem link = "/profile" sprite = {home} content = "Profile"/>
-        <MainItem link = "/news" sprite = {news} content = "Settings"/>
-        <MainItem link = "/messages" sprite = {mes} content = "Groups"/>
+        <MainItem link = "/messages" sprite = {mes} content = "Messages"/>
+        <MainItem link = "/news" sprite = {news} content = "News"/>
         <MainItem link = "/friends" sprite = {friends} content = "Friends"/>
         <MainItem link = "/groups" sprite = {groups} content = "Groups"/>
         <MainItem link = "/music" sprite = {music} content = "Music"/>

@@ -1,4 +1,74 @@
-
+.dialogSearch{
+    border-bottom: solid 1px lightslategrey;
+    box-sizing: border-box;
+    display:flex;
+    border-left-width: 15px;
+    width:552px;
+    height:63px;
+    background: aqua;
+}
+.search{
+    padding: 15px 10px 15px 0;
+}
+.search input{
+    margin-left:26px;
+    line-height: 18px;
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
+    outline: 0;
+    /*-webkit-writing-mode: horizontal-tb !important;*/
+    font: 400 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    cursor: text;
+    border: none;
+}
+.dialogs{
+    width:100%;
+    font-size: 13px;
+    font-family: BlinkMacSystemFont;
+}
+/*.dialog{*/
+/*    max-width:550px;*/
+/*    height:71px;*/
+/*    padding:0 0 0 20px;*/
+/*}*/
+/*.dialogInfo{*/
+/*    padding:10px 0;*/
+/*}*/
+/*.photo img{*/
+/*    width:50px;*/
+/*    height:50px;*/
+/*    margin:0 0 1px 2px;*/
+/*}*/
+/*.dialogName{*/
+/*    width:451px;*/
+/*    height:19px;*/
+/*    font-weight: 500;*/
+/*    -webkit-font-smoothing: subpixel-antialiased;*/
+/*    margin-top: 3px;*/
+/*    margin-bottom: 7px;*/
+/*}*/
+/*.message{*/
+/*    color: darkgray;*/
+/*    margin-top:2px;*/
+/*    max-width: 85%;*/
+/*    width: 85%;*/
+/*}*/
+/*.photo{*/
+/*    width:64px;*/
+/*    height:69px;*/
+/*    padding: 9px 7px 8px 0;*/
+/*    float: left;*/
+/*}*/
 
 
 
