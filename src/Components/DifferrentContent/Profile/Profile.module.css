@@ -1,0 +1,7 @@
+.newPost{
+    width: 550px;
+    height: 52px;
+    border-radius: 4px;
+    background: yellow;
+    padding: 16px 20px 16px 12px;
+}

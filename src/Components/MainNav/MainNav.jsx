@@ -9,7 +9,9 @@ import music from "../../Sprites/music_24(solid).png";
 import settings from "../../Sprites/settings_16.png";
 import mes from "../../Sprites/messages_24(solid).png";
 
+
 const MainNav = () => {
+
     return (
     <nav className={obj.nav}>
         {/*<div><img src={home} alt="" className={obj.home}/><a href="#">Profile</a></div>
