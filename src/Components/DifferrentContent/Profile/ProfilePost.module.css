@@ -1,9 +1,13 @@
 .post{
-    background: darkgray;
+    background: mediumvioletred;
     /*for common div*/
     padding: 8px 20px 20px;
     /*for post*/
     /*padding-top: 3px;*/
     width:510px;
     height:21px;
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 13px;
+    color: black;
 }

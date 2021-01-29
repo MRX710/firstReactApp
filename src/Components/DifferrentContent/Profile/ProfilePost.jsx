@@ -4,6 +4,8 @@ import {NavLink} from "react-router-dom";
 
 
 const ProfilePost = (props) => {
+
+
     return (
         <NavLink to={"/profile/" + props.link}>
             <section className={obj.post}>

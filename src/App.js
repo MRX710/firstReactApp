@@ -13,6 +13,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import News from "./Components/DifferrentContent/News/News";
 
 
+
 // let profile = () => <Profile/>
 // let messages = () => <Messages/>
 // let news = () => <News/>
@@ -38,7 +39,7 @@ const App = (props) => {
                         {/*<Route path="/music"    component={music}/>*/}
                         {/*<Route path="/settings" component={settings}/>*/}
 
-                        <Route path="/profile"  render={() => <Profile postData={props.state.postData}/>}/>
+                        <Route path="/profile"  render={() => <Profile postData={props.state.postData} addPost={props.addPost}/>}/>
                         <Route path="/messages" render={() => <Messages dialogsData={
                             props.state.friends}/>
                         }/>
