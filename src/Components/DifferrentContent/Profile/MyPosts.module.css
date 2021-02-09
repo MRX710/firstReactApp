@@ -1,0 +1,40 @@
+.newPost{
+    max-width: 550px;
+    height: 155px;
+    border-radius: 4px;
+    background: yellow;
+    padding: 16px 20px 16px 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+
+}
+.newPost textarea{
+    width:370px;
+}
+.button{
+    float:right
+}
+.title{
+    height:28px;
+    max-width:370px;
+    /*padding: 16px 20px 0 12px;*/
+}
+.title textarea{
+    height:20px;
+}
+.title active{
+    color: #939393;
+}
+.wrtPost active{
+    color: #939393;
+}
+.wrtPost{
+    max-width:370px;
+    /*padding:0 0 16px 12px;*/
+}
+.wrtPost textarea{
+    height: 30px;
+}
