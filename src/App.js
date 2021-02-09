@@ -14,6 +14,7 @@ import News from "./Components/DifferrentContent/News/News";
 
 
 
+
 // let profile = () => <Profile/>
 // let messages = () => <Messages/>
 // let news = () => <News/>
@@ -25,7 +26,6 @@ import News from "./Components/DifferrentContent/News/News";
 const App = (props) => {
 
     return (
-        <BrowserRouter>
             <div className="wrapper">
                 <Header/>
                 <div className="different_content">
@@ -39,9 +39,9 @@ const App = (props) => {
                         {/*<Route path="/music"    component={music}/>*/}
                         {/*<Route path="/settings" component={settings}/>*/}
 
-                        <Route path="/profile"  render={() => <Profile postData={props.state.postData} addPost={props.addPost}/>}/>
+                        <Route path="/profile"  render={() => <Profile profilePage = {props._state.profilePage} dispatch={props.dispatch}/>}/>
                         <Route path="/messages" render={() => <Messages dialogsData={
-                            props.state.friends}/>
+                            props._state.friends}/>
                         }/>
                         <Route path="/news"     render={() => <News/>}/>
                         <Route path="/friends"  render={() => <Friends/>}/>
@@ -53,9 +53,8 @@ const App = (props) => {
                 </div>
                 {/*<Footer/>*/}
             </div>
-        </BrowserRouter>
+
     );
 }
-//  ctrl+А затем ctrl+alt+L  - выравнивание
-// alt + Enter  - импорт модуля из какого-то места
+
 export default App;

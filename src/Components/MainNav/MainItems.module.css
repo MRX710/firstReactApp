@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
 }
+.item *{
+    box-sizing: content-box;
+}
 .item a{
     /*color:#2A5885;*/
     color:#2A5885;

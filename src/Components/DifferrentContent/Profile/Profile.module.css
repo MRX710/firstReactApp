@@ -1,26 +1,7 @@
 .Myprofile{
     color:black;
-}
-.newPost{
-    max-width: 540px;
-    height: 75px;
-    border-radius: 4px;
-    background: yellow;
-    padding: 16px 20px 16px 12px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
 
 }
-.title{
-    height:17px;
-    padding-bottom: 5px;
-}
-.title active{
-    color: #939393;
-}
-.wrtPost active{
-    color: #939393;
+.aboutMe{
+    height:320px;
 }
