@@ -11,6 +11,7 @@ import Profile from "./Components/DifferrentContent/Profile/Profile";
 import Settings from "./Components/DifferrentContent/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
 import News from "./Components/DifferrentContent/News/News";
+import OpenDialog from "./Components/DifferrentContent/Messages/OpenDialog/OpenDialog";
 
 
 
@@ -39,10 +40,11 @@ const App = (props) => {
                         {/*<Route path="/music"    component={music}/>*/}
                         {/*<Route path="/settings" component={settings}/>*/}
 
-                        <Route path="/profile"  render={() => <Profile profilePage = {props._state.profilePage} dispatch={props.dispatch}/>}/>
-                        <Route path="/messages" render={() => <Messages dialogsData={
-                            props._state.friends}/>
+                        <Route path="/profile"  render={() => <Profile store = {props.store}/>}/>
+                        <Route exact path="/messages" render={() => <Messages dialogsData={
+                            props.state.dialogsPage.friends} dispatch={props.dispatch}/>
                         }/>
+                        <Route path={/messages/ + props.state.dialogsPage.currentDialog.id} render={() => <OpenDialog state = {props.state.dialogsPage.currentDialog}/>}/>
                         <Route path="/news"     render={() => <News/>}/>
                         <Route path="/friends"  render={() => <Friends/>}/>
                         <Route path="/groups"   render={() => <Groups/>}/>

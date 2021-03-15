@@ -1,13 +1,6 @@
 import React from 'react';
 import obj from './MyPosts.module.css';
 import ProfilePost from "./ProfilePost";
-import {
-    addPostActionCreater,
-    updateTextNewPostActionCreator,
-    updateTitleNewPostActionCreator
-} from "../../../Redux/State";
-
-
 
 
 const ProfilePosts = (props) => {
@@ -15,8 +8,8 @@ const ProfilePosts = (props) => {
     let newPostEltTitle = React.createRef();
     let newPostEltText = React.createRef();
 
-    let addPost = () => {
-        props.dispatch(addPostActionCreater());
+    let OnAddPost = () => {
+        props.addPost();
     }
 
     let posts = props.profilePage.postData.map(
@@ -25,17 +18,17 @@ const ProfilePosts = (props) => {
 
     let onPostChangeTitle = () =>
     {
-        props.dispatch(updateTitleNewPostActionCreator(newPostEltTitle.current.value));
+        props.ChangePostTitle(newPostEltTitle.current.value);
     }
     let onPostChangeText = () =>
     {
-        props.dispatch(updateTextNewPostActionCreator(newPostEltText.current.value));
+        props.ChangePostText(newPostEltText.current.value);
     }
 
     return <section>
         <div className={obj.newPost}>
             <div className={obj.button}>
-                <button onClick={addPost} >Add Post </button>
+                <button onClick={OnAddPost} >Add Post </button>
             </div>
             <div className={obj.title}> <textarea onChange = {onPostChangeTitle} value = {props.profilePage.newPost.newPostTitle}  ref={newPostEltTitle}  placeholder="Title of your Post... "></textarea></div>
             <div className={obj.wrtPost}><textarea onChange = {onPostChangeText}   value = {props.profilePage.newPost.newPostText} ref = {newPostEltText}  placeholder="Write and public your Post..."></textarea></div>

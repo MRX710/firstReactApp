@@ -1,0 +1,56 @@
+.dialog{
+    font-size: 13px;
+    font-family: BlinkMacSystemFont;
+    max-width:550px;
+    padding-left: 20px;
+    border-bottom:solid 1px #dae2ea;
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-areas: "photo dialogName"
+                         "photo message";
+    /*align-items: center;*/
+    /*grid-template-rows:32px auto ;*/
+    /*grid-row-gap: 7px;*/
+}
+/*.dialog *{*/
+/*    box-sizing: border-box;*/
+/*}*/
+.photo img{
+    width:50px;
+    height:50px;
+    margin:0 0 1px 2px;
+}
+.photo{
+    /*background: #224B7A;*/
+    width:64px;
+    height:69px;
+    padding: 11px 0 7px 0;
+    grid-area: photo;
+}
+.dialogName{
+    width:451px;
+    height:36px;
+    padding-top: 13px;
+    font-weight: 500;
+    /*margin-top: 13px;*/
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*padding-bottom: 7px;*/
+    grid-area:dialogName;
+}
+.message{
+    height:35px;
+    padding-bottom: 29px;
+    line-height: 17px;
+    white-space: nowrap;
+    max-width: 85%;
+    width: 85%;
+    grid-area:message;
+}
+.message *{
+    color: #656565;
+}
+
+
+
+
+
