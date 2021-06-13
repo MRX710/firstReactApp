@@ -31,9 +31,7 @@ let store = {
 // { ava: this.friends[1].ava,id:this.friends[1].id,who:this.friends[1].who, message: this.friends[1].messages[-1].message}
 
     },
-    _callSubscriber(state) {
-
-    },
+    _callSubscriber(state) {},
     getState() {
         return this._state;
     },

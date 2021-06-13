@@ -12,7 +12,7 @@ import Settings from "./Components/DifferrentContent/Settings/Settings";
 import {BrowserRouter, Route} from "react-router-dom";
 import News from "./Components/DifferrentContent/News/News";
 import OpenDialog from "./Components/DifferrentContent/Messages/OpenDialog/OpenDialog";
-
+import UsersContainer from "./Components/Users/UsersContainer";
 
 
 
@@ -46,10 +46,12 @@ const App = (props) => {
                         }/>
                         <Route path={/messages/ + props.state.dialogsPage.currentDialog.id} render={() => <OpenDialog state = {props.state.dialogsPage.currentDialog}/>}/>
                         <Route path="/news"     render={() => <News/>}/>
-                        <Route path="/friends"  render={() => <Friends/>}/>
+                        {/*<Route path="/friends"  render={() => <Friends/>}/>*/}
                         <Route path="/groups"   render={() => <Groups/>}/>
                         <Route path="/music"    render={() => <Music/>}/>
                         <Route path="/settings" render={() => <Settings/>}/>
+                        <Route path="/friends"  render={() => <UsersContainer store = {props.store}/>}/>
+                        <Route path="/users" render={() => <UsersContainer store = {props.store}/>}/>
                     </div>
                     <AdditNav/>
                 </div>
