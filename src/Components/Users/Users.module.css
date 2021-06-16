@@ -1,0 +1,9 @@
+.users{
+    width:510px;
+    margin: 0 auto;
+
+    /*display:grid;*/
+    /*grid-template-columns:510px;*/
+    /*grid-template-rows: 218px;*/
+    /*row-gap: 30px;*/
+}

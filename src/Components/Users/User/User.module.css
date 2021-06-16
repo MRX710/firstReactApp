@@ -1,0 +1,126 @@
+.user{
+    /*width:510px;*/
+
+    padding: 15px 0;
+    margin: 0 auto;
+    /*width:100%;*/
+    min-height:218px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userInfo{
+    display: grid;
+    grid-template-columns: 62px 293px 155px;
+    grid-tempate-rows: 28px 1fr;
+    grid-template-areas: "photo fullName button"
+                         "photo addtInfo button";
+    height: 50px;
+}
+.followOr{
+    grid-area: button;
+    display:flex;
+    justify-content: flex-end;
+    /*padding-left: 20px;*/
+    padding-top: 10px;
+    /*grid-column: 3;*/
+    /*align-self: center;*/
+}
+@media screen and (max-width: 1070px){
+    .followOr {
+        width:95px;
+    }
+}
+
+.userInfo__cancelButton{
+
+    width:23px;
+    height:29px;
+    background-image:  url("../../../Sprites/svg/arrow.svg" );
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*color:#3f8ae0;*/
+    background-color: rgba(0 28 61 0.05);
+    /*border-color:inherit;*/
+    border: 0;
+    border-radius: 1.5px 4px 4px 1.5px ;
+}
+
+
+/*{style.userInfo__button, style.userInfo__button_active}*/
+.userInfo__followButton{
+/*width:87px;*/
+width:87px;
+    height:29px;
+    padding: 7px 16px 8px;
+    text-align: center;
+    background-color: #5181b8;
+    border: 0;
+    border-radius: 4px 2px 2px 4px;
+    font-size: 12.5px;
+    display: inline-block;
+    zoom: 1;
+    white-space: nowrap;
+    outline: 0;
+    font-family: -apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
+    vertical-align: top;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+}
+
+.userInfo__followButton_active{
+    background-color: #f2f4f5;
+    color: #5181b8;
+}
+
+
+
+.photo{
+    width:62px;
+    height:50px;
+    padding-right: 12px;
+    grid-area: photo;
+}
+.photo img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+
+}
+.userInfo__fullName{
+    padding: 8px 10px 0 0;
+    grid-area:fullName;
+    color: #2a5885;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: left;
+}
+.userInfo__addtInfo{
+    color: #909499;
+    grid-area:addtInfo;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 13px;
+    align-self: start;
+    padding-bottom: 10px;
+}
+
+
+.userPhotos{
+    display: grid;
+    /*grid-template-columns: repeat(4, 123px);*/
+    grid-template-columns: repeat(auto-fit, 123px);
+    column-gap:6px;
+    /*height:138px;*/
+    padding-top: 15px;
+}
+.userPhoto img{
+    width:123px;
+    height:123px;
+}
